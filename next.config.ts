@@ -1,7 +1,25 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "behold.pictures",
+        port: "",
+        pathname: "/**",
+      },
+    ],
+  },
+  async redirects() {
+    return [
+      {
+        source: "/cookie-policy",
+        destination: "/cookies",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
