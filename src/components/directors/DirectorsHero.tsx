@@ -11,10 +11,10 @@ export function DirectorsHero() {
         alt="Parents and young children gathering at a childcare center"
         priority
         sizes="100vw"
-        className="h-[67vw] w-full sm:hidden"
+        className="h-[70vw] w-full object-left sm:hidden"
       />
 
-      <div className="relative z-10 mx-auto -mt-[8vw] w-full max-w-[390px] px-8 pb-9 pt-5 sm:hidden">
+      <div className="relative z-10 -mt-[8vw] ml-6 w-[78%] max-w-[360px] px-6 pb-9 pt-5 sm:hidden">
         <h1 className="font-serif text-[31px] font-extrabold leading-[1.05] text-white">
           One new
           <br />
@@ -37,7 +37,7 @@ export function DirectorsHero() {
           and stay.
         </p>
 
-        <div className="mx-auto mt-7 flex w-full max-w-[242px] flex-col gap-[21px]">
+        <div className="mt-7 flex w-full max-w-[242px] flex-col gap-[21px]">
           <Button
             href="/certification"
             variant="outlineLight"
