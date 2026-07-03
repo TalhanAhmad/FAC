@@ -37,10 +37,9 @@ export const footerNav = {
   ],
 };
 
-// TODO(media): confirm the real profile handles with the client before launch.
 export const socialLinks = [
   { label: "Facebook", href: "https://www.facebook.com/foodallergycertified", icon: "facebook" },
   { label: "TikTok", href: "https://www.tiktok.com/@foodallergycertified", icon: "tiktok" },
   { label: "Instagram", href: "https://www.instagram.com/foodallergycertified", icon: "instagram" },
-  { label: "LinkedIn", href: "https://www.linkedin.com/company/foodallergycertified", icon: "linkedin" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/company/food-allergy-certified/", icon: "linkedin" },
 ] as const;

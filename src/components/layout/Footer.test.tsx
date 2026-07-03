@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import { Footer } from "./Footer";
 
 vi.mock("next/navigation", () => ({
@@ -33,5 +33,21 @@ describe("Footer", () => {
     );
 
     expect(hadDuplicateKeyWarning).toBe(false);
+  });
+
+  it.each([
+    ["Instagram", "https://www.instagram.com/foodallergycertified"],
+    ["Facebook", "https://www.facebook.com/foodallergycertified"],
+    ["LinkedIn", "https://www.linkedin.com/company/food-allergy-certified/"],
+    ["TikTok", "https://www.tiktok.com/@foodallergycertified"],
+  ])("links the %s icon to its official profile", (label, href) => {
+    render(<Footer />);
+
+    expect(screen.getByRole("link", { name: label })).toHaveAttribute("href", href);
+    expect(screen.getByRole("link", { name: label })).toHaveAttribute("target", "_blank");
+    expect(screen.getByRole("link", { name: label })).toHaveAttribute(
+      "rel",
+      "noopener noreferrer",
+    );
   });
 });
