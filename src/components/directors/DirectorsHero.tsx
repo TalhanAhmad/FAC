@@ -11,26 +11,38 @@ export function DirectorsHero() {
         alt="Parents and young children gathering at a childcare center"
         priority
         sizes="100vw"
-        className="h-auto w-full sm:hidden"
+        className="h-[67vw] w-full sm:hidden"
       />
 
-      <div className="mx-auto w-full max-w-[323px] px-5 pb-9 pt-5 sm:hidden">
-        <h1 className="font-serif text-[31px] font-extrabold leading-[0.98] text-white">
-          One new enrollment pays for this. The peace of mind is priceless.
+      <div className="relative z-10 mx-auto -mt-[8vw] w-full max-w-[390px] px-8 pb-9 pt-5 sm:hidden">
+        <h1 className="font-serif text-[31px] font-extrabold leading-[1.05] text-white">
+          One new
+          <br />
+          enrollment pays for
+          <br />
+          this. The peace of
+          <br />
+          mind is priceless.
         </h1>
 
-        <p className="mt-7 text-[15px] leading-[1.24] text-white/90">
-          Food Allergy Certified gives your team the training, your center the
-          credentials, and food allergy families the reason they&rsquo;ve been
-          looking for to choose you and stay.
+        <p className="mt-8 text-[15px] leading-[1.24] text-white/90">
+          Food Allergy Certified gives your team
+          <br />
+          the training, your center the credentials,
+          <br />
+          and food allergy families the reason
+          <br />
+          they&rsquo;ve been looking for to choose you
+          <br />
+          and stay.
         </p>
 
-        <div className="mt-7 flex flex-col gap-4">
+        <div className="mx-auto mt-7 flex w-full max-w-[242px] flex-col gap-[21px]">
           <Button
             href="/certification"
             variant="outlineLight"
             size="hero"
-            className="min-h-[45px] w-full"
+            className="min-h-[48px] w-full"
           >
             Get your center certified
           </Button>
@@ -38,7 +50,7 @@ export function DirectorsHero() {
             href="/for-directors#assessment"
             variant="mint"
             size="hero"
-            className="min-h-[45px] w-full bg-white hover:bg-white/85"
+            className="min-h-[48px] w-full bg-white hover:bg-white/85"
           >
             Take the assessment
           </Button>
